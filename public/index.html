@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html ng-app="ClassApp">
+
+<head>
+  <title>Angular App</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+  <script src="/app.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>Class Example</h1>
+  <p>Jump to <a href="/first">First Class</a> or <a href="/second">Second Class</a> or <a href="/third">Third Class</a> or <a href="/fourth">Fourth Class</a> or <a href="/fifth">Fifth Class</a> or <a href="/">Home page</a>.
+  <div ng-view></div>
+  <ng-include src="'footer.html'"></ng-include>
+</body>
+</html>
