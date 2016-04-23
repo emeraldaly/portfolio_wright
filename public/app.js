@@ -1,20 +1,26 @@
 angular.module("ClassApp", ["ngRoute"])
  .config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
   $routeProvider
-    .when('/first', {
-      templateUrl: "first.html"
+    .when('/about', {
+      templateUrl: "about.html"
     })
-    .when('/second', {
-      templateUrl: "second.html"
+    .when('/clickgame', {
+      templateUrl: "clickgame.html"
     })
-    .when('/third', {
-      templateUrl: "third.html"
+    .when('/contact', {
+      templateUrl: "contact.html"
     })
-    .when('/fourth', {
-      templateUrl: "fourth.html"
+    .when('/blog', {
+      templateUrl: "blog.html"
     })
-    .when('/fifth', {
-      templateUrl: "fifth.html"
+    .when('/games', {
+      templateUrl: "games.html"
+    })
+    .when('/projects', {
+      templateUrl: "projects.html"
+    })
+    .when('/rps', {
+      templateUrl: "rps.html"
     })
     .otherwise({
       templateUrl: "initial.html"
