@@ -124,6 +124,8 @@ nav {
 
 .top-ribbon {
 	height: 5px;
+	background-color: #80deea;
+  background-image: url("elements/img/flowers3.jpg");
 }
 
 nav ul {
@@ -132,6 +134,7 @@ nav ul {
 	max-width: 826px;
 	margin: 0 auto;
 	padding: 0;
+	background-image: url("elements/img/flowers3.jpg");
 }
 
 nav li {
@@ -182,6 +185,7 @@ nav li:hover {
 	overflow: hidden;
 	visibility: visible;
 	background-color: rgba(46, 46, 46, 1);
+	background-image: url("elements/img/flowers3.jpg");
 }
 
 
