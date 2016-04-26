@@ -18,50 +18,34 @@
     <link rel="stylesheet" href="elements/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 </head>
 
 <body>
 <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
-<!--   <nav class="navbar">
-      <ul>
-        <h3>
-          <li><a ui-sref="contact">Contacts</a></li>
-          <li><a href="projects">Projects</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="home">Home page</a></li>
-        </h3>
-      </ul>
-    </nav>
-    <div class="sparator"></div> -->
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
+    <nav class="navbar">
 
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a ui-sref="home"><!-- <img src="img/Home.png" alt="home"> -->Home</a></li>
-        <li><a ui-sref="about">About</a></li>
-        <li><a ui-sref="projects">Projects</a></li>
+      <ul class="nav navbar-nav navbar-right"> 
+        <li><a ui-sref="home"><h4>Home</h4></a></li>     
+        <li><a ui-sref="about"><h4>About</h4></a></li>
+        <li><a ui-sref="projects"><h4>Projects</h4></a></li>
       </ul>  
-        <!-- <li><a ui-sref="register"><img src="img/addUser.png" alt="organization">Register w/organization</a> </li>
-        <li><a ui-sref="addUser"><img src="img/addUser.png" alt="add user">Add user</a> </li> -->
-        
-
-    </div><!-- /.navbar-collapse -->
+    </nav>    
 
 
 <div class="container">
-<div class="row">
-  <div class="col-md-2">
-    <p><img class="profilePic" id="profilePic" src="elements/img/prof1.jpg" align="center"></p>
-  </div>  
-  <div class="col-md-10">
+<div class="row" id="welcomeBox">
+  <div class="col-lg-6 col-sm-12">
       <!--Rotating Text-->
+      <p><img class="profilePic" id="profilePic" src="elements/img/draw_left.jpg" align="center"></p> 
         <section class="rw-wrapper">
-          <h2 class="rw-sentence">
+          <h4 class="rw-sentence">
                 <span>I enjoy</span>
             <div class="rw-words rw-words-1">
                 <span>creating</span>
@@ -71,13 +55,10 @@
                 <span>designing</span>
                 <span>managing</span>
             </div>
-           </h2>
+           </h4>
         </section>
   </div>
 </div>
- 
-
-    
 
   <div ui-view></div>
   {{ 3 + 2 }}

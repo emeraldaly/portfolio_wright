@@ -9,7 +9,10 @@ body {
 .sparator {
   width: 100%;
 }
+#welcomeBox {
+  background-color: blue;
 
+}
 nav {
   background-color: #80deea;
   background-image: url("../img/flowers3.jpg");
@@ -17,19 +20,9 @@ nav {
   padding-bottom: 5px;
 }
 
-.top-ribbon {
-  height: 5px;
-  background-color: #80deea;
-  background-image: url("elements/img/flowers3.jpg");
-}
-
-nav ul {
-  width: 75%;
-  min-width: 280px;
-  max-width: 826px;
-  margin: 0 auto;
-  padding: 0;
-  background-image: url("elements/img/flowers3.jpg");
+nav h4 {
+  font-family: 'Playfair Display', serif;
+  color: #ffe0b2;
 }
 
 nav li {
@@ -48,8 +41,8 @@ nav li {
 }
 
 nav li:hover {
-  background-color: rgb(192, 23, 104);
-  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  background-image: url('elements/img/flowers1.jpg');
+  /*text-shadow: 1px 1px 3px rgb(0, 0, 0);*/
 }
 
 h1 {
@@ -58,8 +51,10 @@ h1 {
 }
 h3 {
   font-family: 'Comfortaa', cursive;
-  text-shadow: 2px 2px #e0e0e0;
+  color: #ef5350;
+  /*text-shadow: 2px 2px #e0e0e0;*/
 }
+
 .footer {
   position: fixed; 
   bottom: 0px;  

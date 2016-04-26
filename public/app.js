@@ -14,9 +14,11 @@ angular.module('PortfolioApp', ['ui.router'])
         url: '/projects',
         templateUrl: 'projects.html'
       })
-      
+
 
     
 
     $locationProvider.html5Mode(true);
   }]);
+
+  // , 'ui.bootstrap'
