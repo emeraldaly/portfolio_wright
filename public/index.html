@@ -4,27 +4,23 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-<html ng-app="ClassApp">
+<html ng-app="PortfolioApp">
 
 <head>
   <meta charset="utf-8">
   <title>Portfolio MEAN Stack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Alyson Wright" />
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <base href="/"/>
+  </head>
     <link rel="stylesheet" href="elements/css/normalize.css">
-    <link rel="stylesheet" href="elements/css/main.css">
     <link rel="stylesheet" href="elements/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-    <script src="/app.js"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-  <link rel="stylesheet" type="text/css" href="elements/css/clickgame.css">
-
-  <link rel="stylesheet" type="design/css" href="elements/css/rpsdesign.css">
 </head>
 
 <body>
@@ -34,12 +30,12 @@
   <nav class="navbar">
      <!-- <div class="top-ribbon"></div>-->
       <ul>
-        <h3><li><a href="/">Home page</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/clickgame">Click</a></li>
-        <li><a href="/rps">RPS</a></li>
-        <li><a href="/blog">Blog</a></li></h3>
+        <h3>
+          <li><a ui-sref="contact">Contacts</a></li>
+          <li><a href="projects">Projects</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="home">Home page</a></li>
+        </h3>
       </ul>
     </nav>
     <div class="sparator"></div>
@@ -47,7 +43,10 @@
 <!--<header class="site-header">-->
 <div class="container">
 <div class="row">
-  <p><img class="profilePic" id="profilePic" src="elements/img/prof1.jpg" align="center"></p>
+  <div class="col-md-2">
+    <p><img class="profilePic" id="profilePic" src="elements/img/prof1.jpg" align="center"></p>
+  </div>  
+  <div class="col-md-10">
       <!--Rotating Text-->
         <section class="rw-wrapper">
           <h2 class="rw-sentence">
@@ -62,27 +61,23 @@
             </div>
            </h2>
         </section>
-      </div>
+  </div>
+</div>
  
         <!-- Web developer | Manager. Internationally Inclined. Curious Mind. Spout of Information. Alarming Laugh. -->
  <!-- </header>-->
 
     
 
-  <div ng-view></div>
-  <ng-include src="'footer.html'"></ng-include>
+  <div ui-view></div>
+  {{ 3+2 }}
+  <!-- <ng-include src="'footer.html'"></ng-include> -->
   </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <!--<script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>-->
-    <script src="elements/js/plugins.js"></script>
-    <script src="elements/js/main.js"></script>
-    <script src="elements/js/init.js"></script>
+   <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
 
-    <script type="text/javascript" src="elements/js/rpsbuttons.js"></script>
-    <script type="text/javascript" src="elements/js/rpsGameLogic.js"></script>
-    <script type="text/javascript" src="elements/js/rpsScoreTracker.js"></script>
-
-    <script type="text/javascript" src="elements/js/clickgame.js"></script>
+   <!--  <script src="elements/js/init.js"></script> -->
+    <script type="text/javascript" src="/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 </body>
 </html>
