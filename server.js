@@ -6,6 +6,10 @@ var PORT = process.env.PORT || 8080;
 app.use(logger('dev'));
 app.use(express.static(__dirname + "/public"));
 
+app.get('/', function(req, res) {
+  res.render('index');
+});
+
 app.listen(PORT, function(){
   console.log("listening on PORT:" + PORT);
 });

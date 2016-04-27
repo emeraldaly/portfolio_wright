@@ -4,19 +4,19 @@ angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
     $stateProvider
       .state('home', {
         url: '/home',
-        templateUrl: 'initial.html'
+        templateUrl: 'views/initial.html'
       })
       .state('about', {
         url: '/about',
-        templateUrl: 'about.html'
+        templateUrl: 'views/about.html'
       })
       .state('projects', {
         url: '/projects',
-        templateUrl: 'projects.html'
+        templateUrl: 'views/projects.html'
       })
       .state('resume', {
         url: '/resume',
-        templateUrl: 'resume.html'
+        templateUrl: 'views/resume.html'
       })
 
 
