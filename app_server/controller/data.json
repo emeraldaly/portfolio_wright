@@ -1,0 +1,81 @@
+[
+  {
+    "title":"Good-Form",
+    "deployedLink":"http://goodform.herokuapp.com/",
+    "gitLink":"https://github.com/emeraldaly/good-form",
+    "description":"An organizational app for educational programs",
+    "technologies":"Node, Angular, MongoDB, Express, Passport, BCryptjs, Bootstrap"
+  },
+  {
+    "title":"Rutgers Flyer",
+    "deployedLink":"https://rutgersflyers.herokuapp.com/",
+    "gitLink":"https://github.com/emeraldaly/rutgersflyers",
+    "description":"An app to find and review events, services, and food near Rutgers New Brunswick",
+    "technologies":"HTML, CSS, JS, JQuery, AJAX, Bootstrap, Node.js, Handlebars, Sequelize, Passport, Express"
+  },
+  {
+    "title":"Mind the Good",
+    "deployedLink":"www.mindthegood.com",
+    "gitLink":"",
+    "description":"",
+    "technologies":"Wordpress, HTML, CSS"
+  },
+  {
+    "title":"Flourishing Females",
+    "deployedLink":"www.flourishingfemales.com",
+    "gitLink":"",
+    "description":"",
+    "technologies":"Wordpress, HTML, CSS"
+  },
+   {
+    "title":"Ari Pinkus",
+    "deployedLink":"www.aripinkus.com",
+    "gitLink":"",
+    "description":"",
+    "technologies":"Wordpress, HTML, CSS"
+  },
+   {
+    "title":"Goal App",
+    "deployedLink":"",
+    "gitLink":"",
+    "description":"",
+    "technologies":"Wordpress, HTML, CSS"
+  },
+  {
+    "title":"Rock, Paper, Scissor",
+    "deployedLink":"https://wright-rps.herokuapp.com",
+    "gitLink":"https://github.com/emeraldaly/rockPaperScissors",
+    "description":"Play Rock, Paper, Scissor against the computer",
+    "technologies":"Express App, Bootstrap, HTML, CSS, JQuery"
+  },
+  {
+    "title":"Travel Site Mock-Up",
+    "deployedLink":"https://secure-chamber-2786.herokuapp.com",
+    "gitLink":"https://github.com/emeraldaly/travelTight",
+    "description":"This is a mock-up of the front end of a travel site",
+    "technologies":"Bootstrap, HTML, CSS, JQuery"
+    
+  },
+  {
+    "title":"Click Game",
+    "deployedLink":"http://morning-oasis-7097.herokuapp.com/",
+    "gitLink":"https://github.com/emeraldaly/clickComedians",
+    "description":"How many female comedians can you click in 20 seconds?",
+    "technologies":"Bootstrap, CSS, HTML, Bootstrap, JQuery"
+    
+  },
+  {
+    "title":"Stack Overflow Mockup",
+    "deployedLink":"http://limitless-sea-6651.herokuapp.com",
+    "gitLink":"https://github.com/emeraldaly/stackoverflow-cas",
+    "description":"A front end mockup of Stack Overflow",
+    "technologies":"Bootstrap, HTML, CSS"
+  },
+  {
+    "title":"Indian Fairytales",
+    "deployedLink":"",
+    "gitLink":"https://github.com/emeraldaly/good-form",
+    "description":"",
+    "technologies":""
+  }
+]

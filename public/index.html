@@ -9,20 +9,20 @@
 <head>
   <meta charset="utf-8">
   <title>Portfolio MEAN Stack</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--angular-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
     <base href="/"/>
+    <!--CSS-->
     <link rel="stylesheet" href="elements/css/normalize.css">
     <link rel="stylesheet" href="elements/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -30,55 +30,45 @@
 <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
-    <nav class="navbar">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+       <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+              <ul>
+                <li><a ui-sref="home"><h3>Home</h3></a></li>
+                <li><a ui-sref="about"><h3>About</h3></a></li>
+                <li><a ui-sref="projects"><h3>Projects</h3></a></li>              
+              </ul>
+          </div>
+        </div>
+      </nav>
 
-      <ul class="nav navbar-nav navbar-right"> 
-        <li><a ui-sref="home"><h4>Home</h4></a></li>     
-        <li><a ui-sref="about"><h4>About</h4></a></li>
-        <li><a ui-sref="projects"><h4>Projects</h4></a></li>
-      </ul>  
-    </nav>  
-
-    <div ng-controller="DropdownCtrl">
-    <!-- Single button -->
-    <div class="btn-group" uib-dropdown is-open="status.isopen">
-      <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
-        Button dropdown <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-        <li role="home"><a href="#">Home</a></li>
-        <li role="about"><a href="#">About</a></li>
-        <li role="projects"><a href="#">Projects</a></li>
-      </ul>
-    </div>  
-  </div>
-
-
-<div class="container-full" id="welcomeBox">
-<div class="row">
-  <div class="col-lg-6 col-sm-12">
-      <!--Rotating Text-->
-      <p><img class="profilePic" id="profilePic" src="elements/img/draw_left.jpg" align="center"></p> 
-        <section class="rw-wrapper">
-          <h4 class="rw-sentence">
-                <span>I enjoy</span>
-            <div class="rw-words rw-words-1">
-                <span>creating</span>
-                <span>delivering</span>
-                <span>learning</span>
-                <span>researching</span>
-                <span>designing</span>
-                <span>managing</span>
-            </div>
-           </h4>
-        </section>
-  </div>
-</div>
-
+   
+      
+<div class="container" id="welcomeBox">
+   
   <div ui-view></div>
-  {{ 3 + 2 }}
-  <!-- <ng-include src="'footer.html'"></ng-include> -->
-  </div>
+ 
+</div>
+   <!-- Footer -->
+    <footer class="text-right" id="foot">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-lg-12">
+                                <a href="https://www.linkedin.com/in/alysonwright" target="_blank">
+                                <img border="0" alt="LinkedIn" src="https://cdn3.iconfinder.com/data/icons/free-sketch/283/04_linkedin-128.png" width="50" height="50"></a>
+                                <a href="https://www.facebook.com/alyson.wright.7" target="_blank">
+                                <img border="0" alt="Facebook" src="https://cdn3.iconfinder.com/data/icons/free-sketch/283/02_facebook-128.png" width="50" height="50"></a>
+                                <a href="https://twitter.com/EmeraldAly" target="_blank">
+                                <img border="0" alt="Twitter" src="https://cdn3.iconfinder.com/data/icons/free-sketch/283/01_tweeter-128.png" width="50" height="50"></a>
+                                <a href="https://github.com/emeraldaly" target="_blank">
+                                <img border="0" alt="Github" src="elements/img/github.png" width="50" height="50"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
 
    <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
 

@@ -1,6 +1,6 @@
 angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
   .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
-    $urlRouterProvider.otherwise('/initial');
+    $urlRouterProvider.otherwise('/home');
     $stateProvider
       .state('home', {
         url: '/home',

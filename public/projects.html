@@ -1,60 +1,99 @@
-  <div class="container flow-text">
-        <div class="row">
-            <div class="col s12 m12 l12 z-depth-5" id="top">
+<!-- 1st row verticaly centered text in the square columns -->
 
-            <div ng-controller="AccordionCtrl">
-              <script type="text/ng-template" id="group-template.html">
-                <div class="panel {{panelClass || 'panel-default'}}">
-                  <div class="panel-heading">
-                    <h4 class="panel-title" style="color:#fa39c3">
-                      <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading"><span
-                        ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
-                    </h4>
-                  </div>
-                  <div class="panel-collapse collapse" uib-collapse="!isOpen">
-                    <div class="panel-body" style="text-align: right" ng-transclude></div>
-                  </div>
-                </div>
-              </script>
-
-              <p>
-                <button type="button" class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button>
-                <button type="button" class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
-              </p>
-
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" ng-model="oneAtATime">
-                  Open only one at a time
-                </label>
-              </div>
-              <uib-accordion close-others="oneAtATime">
-                <uib-accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
-                  This content is straight in the template.
-                </uib-accordion-group>
-                <uib-accordion-group heading="{{group.title}}" ng-repeat="group in groups">
-                  {{group.content}}
-                </uib-accordion-group>
-                <uib-accordion-group heading="Dynamic Body Content">
-                  <p>The body of the uib-accordion group grows to fit the contents</p>
-                  <button type="button" class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
-                  <div ng-repeat="item in items">{{item}}</div>
-                </uib-accordion-group>
-                <uib-accordion-group heading="Custom template" template-url="group-template.html">
-                  Hello
-                </uib-accordion-group>
-                <uib-accordion-group heading="Delete account" panel-class="panel-danger">
-                  <p>Please, to delete your account, click the button below</p>
-                  <button class="btn btn-danger">Delete</button>
-                </uib-accordion-group>
-                <uib-accordion-group is-open="status.open">
-                  <uib-accordion-heading>
-                    I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
-                  </uib-accordion-heading>
-                  This is just some content to illustrate fancy headings.
-                </uib-accordion-group>
-              </uib-accordion>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <ul>This demo shows you can center multiple types of content :
+                    <li>Text</li>
+                    <li>Images</li>
+                    <li>Lists</li>
+                    <li>... (you can also do it with forms)</li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell numbers">
+                    98%
+            </div>
+        </div>
     </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell numbers">               
+                3.9/5
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 2nd row verticaly centered images in square columns -->
+
+<div class="square">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <img class="rs" src="https://farm3.staticflickr.com/2878/10944255073_973d2cd25c.jpg"/>
+                Responsive image.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+               <img class="rs" src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg"/>
+                Responsive image.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <img class="rs" src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg"/>
+                Responsive image.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3rd row responsive images in background with centered content -->
+
+<div class="square bg img1">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Centered responsive images as background with centered content over it.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img2">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Again
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img3">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                And again
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END OF LAYOUT, following juts for the demo -->
+
