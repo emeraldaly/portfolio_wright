@@ -14,6 +14,10 @@ angular.module('PortfolioApp', ['ui.router', 'ui.bootstrap'])
         url: '/projects',
         templateUrl: 'projects.html'
       })
+      .state('resume', {
+        url: '/resume',
+        templateUrl: 'resume.html'
+      })
 
 
     
