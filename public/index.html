@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
     <base href="/"/>
     <link rel="stylesheet" href="elements/css/normalize.css">
     <link rel="stylesheet" href="elements/css/style.css">
@@ -36,11 +37,25 @@
         <li><a ui-sref="about"><h4>About</h4></a></li>
         <li><a ui-sref="projects"><h4>Projects</h4></a></li>
       </ul>  
-    </nav>    
+    </nav>  
+
+    <div ng-controller="DropdownCtrl">
+    <!-- Single button -->
+    <div class="btn-group" uib-dropdown is-open="status.isopen">
+      <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        Button dropdown <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+        <li role="home"><a href="#">Home</a></li>
+        <li role="about"><a href="#">About</a></li>
+        <li role="projects"><a href="#">Projects</a></li>
+      </ul>
+    </div>  
+  </div>
 
 
-<div class="container">
-<div class="row" id="welcomeBox">
+<div class="container-full" id="welcomeBox">
+<div class="row">
   <div class="col-lg-6 col-sm-12">
       <!--Rotating Text-->
       <p><img class="profilePic" id="profilePic" src="elements/img/draw_left.jpg" align="center"></p> 
@@ -70,5 +85,7 @@
    <!--  <script src="elements/js/init.js"></script> -->
     <script type="text/javascript" src="app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="app_server/controller/DropdownCtrl.js"></script>
+    <script type="text/javascript" src="app_server/controller/AccordianCtrl.js"></script>
 </body>
 </html>
